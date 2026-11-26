@@ -1,0 +1,81 @@
+:root {
+  --bg: #fdfcf9;
+  --surface: #ffffff;
+  --text: #26241f;
+  --muted: #6f6a5e;
+  --border: #e6e1d5;
+  --accent: #b4552d;
+  --accent-soft: #f7e8e0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171613;
+    --surface: #201e1a;
+    --text: #ece8df;
+    --muted: #a39c8d;
+    --border: #38342c;
+    --accent: #e08a5f;
+    --accent-soft: #33231b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+header.site {
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 20px;
+  margin-bottom: 32px;
+}
+header.site .blog-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+header.site .blog-desc { color: var(--muted); font-size: 14px; margin-top: 4px; }
+header.site nav { margin-top: 12px; font-size: 14px; }
+header.site nav a { margin-right: 16px; color: var(--muted); }
+.post-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-bottom: 16px;
+}
+.post-card .date { color: var(--muted); font-size: 13px; }
+.post-card h2 { font-size: 19px; margin: 4px 0 8px; line-height: 1.5; }
+.post-card h2 a { color: var(--text); }
+.post-card p { margin: 0; color: var(--muted); font-size: 14px; }
+.tags { margin-top: 10px; }
+.tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 2px 10px;
+  margin-right: 6px;
+}
+article.post h1 { font-size: 26px; line-height: 1.5; margin: 0 0 6px; }
+article.post .date { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+article.post h2 { font-size: 20px; margin: 32px 0 10px; line-height: 1.5; }
+article.post p { margin: 0 0 16px; }
+article.post ul { margin: 0 0 16px; padding-left: 22px; }
+article.post li { margin-bottom: 6px; }
+.back { display: inline-block; margin: 32px 0 8px; font-size: 14px; }
+footer.site {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding: 20px 0 32px;
+  color: var(--muted);
+  font-size: 13px;
+}
