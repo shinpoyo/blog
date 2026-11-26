@@ -71,6 +71,7 @@ article.post h2 { font-size: 20px; margin: 32px 0 10px; line-height: 1.5; }
 article.post p { margin: 0 0 16px; }
 article.post ul { margin: 0 0 16px; padding-left: 22px; }
 article.post li { margin-bottom: 6px; }
+article.post img { max-width: 100%; height: auto; border-radius: 8px; margin: 8px 0 16px; }
 .back { display: inline-block; margin: 32px 0 8px; font-size: 14px; }
 footer.site {
   border-top: 1px solid var(--border);
